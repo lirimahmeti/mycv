@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" width="600">
+    <table border="1" width="400">
         <tr>
             <td width="102"><img src="/images/myphoto.png" alt="Lirim Ahmeti's portrait photo" width="100"></td>
             <td valign="top" colspan="2">
                 <h3 >Lirim Ahmeti</h3> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptate quod praesentium itaque voluptatem, nisi sunt eveniet!</p>
             </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" bgcolor="lightgrey"><h3>Social Media</h3></td>
         </tr>
         <tr align="center">
             <td><a href="https://www.instagram.com/lirim.ahmeti0/">Instagram</a></td>
@@ -33,7 +36,7 @@
                 </ul>
             </td>
         </tr>
-        <tr>
+        <tr bgcolor="lightgrey" align="center">
             <td colspan="3">
                 <h3>Skills</h3>
             </td>
@@ -61,7 +64,42 @@
                 </ul> 
             </td>
         </tr>
-
     </table>
+    <br>
+    <fieldset>
+        <legend><H3>Fill up this form so i can reach back to you!</H3></legend>
+    <form action="#">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Name*" required="required" minlength="3" maxlength="15" id="name">
+
+        
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email*" required="required" >
+        <br><br>
+        
+        <label for="nr">Number:</label>
+        <input type="tel" name="number" placeholder="Phone number*" id="nr" pattern="[0-9+]" required>
+        <br><br>
+
+        <label for="msg">Message:</label>
+
+        <br>
+        <textarea name="message" id="msg" cols="20" rows="3" placeholder="Type a message"></textarea>
+        <fieldset>
+            <legend>Who are you?</legend>
+            <select name="Who are you?" id="slc" value="Individual" required>
+                <option value="Individ">Individual</option>
+                <option value="Business">Business</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        
+
+    </form>
+    </fieldset>
 </body>
 </html>
